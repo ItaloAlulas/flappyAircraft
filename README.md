@@ -4,6 +4,11 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+<p align="center">
+  <img src="images/flappyAircraftTelaInicial.png" width="400px">
+  <img src="images/flappyAircraftRodando.png" width="400px">
+</p>
+
 O Flappy Aircraft é o primeiro jogo que criei!
 Foi inspirado no clássico Flappy Bird e desenvolvido do zero com HTML, CSS e JavaScript.
 
