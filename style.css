@@ -1,0 +1,221 @@
+/* RESET */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* FONTS */
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+.micro-5-regular {
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* CODE */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+
+  background-image: 
+  linear-gradient(deepskyblue, #ffffff);
+
+  color: white;
+
+  font-family: "Micro 5", sans-serif;
+}
+
+.areaDoJogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 900px;
+  height: 500px;
+
+  background-image: radial-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/skyPixelart.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: deepskyblue;
+  border: 3px solid black;
+
+  overflow: hidden;
+}
+
+.aviao {
+  position: absolute;
+  width: 60px;
+  left: 400px;
+}
+
+.barreira {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.corpo {
+  width: 100px;
+  height: 175px;
+
+  background-image: linear-gradient(to right, rgb(0, 0, 75), rgb(62, 62, 98));
+  background-size: 100% auto;
+  background-repeat: repeat;
+
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.borda {
+  width: 125px;
+  height: 25px;
+
+  background-image: linear-gradient(to right, rgb(0, 0, 50), rgb(62, 62, 98));
+  background-size: 100% auto;
+
+  border: 2px solid black;
+}
+
+.parDeBarreiras {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 500px;
+  width: 125px;
+
+  left: 400px;
+}
+
+p.textoReiniciarJogo {
+  font-size: 50px;
+  text-align: center;
+  z-index: 100
+}
+
+p.pontuacao {
+  position: absolute;
+
+  top: 0px;
+  right: 30px;
+
+  font-size: 75px;
+
+  z-index: 101
+}
+
+.telaInicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 900px;
+  height: 500px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url(images/ceuPixelart.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img.aviaoTelaInicial {
+  position: relative;
+  top: 50px;
+
+  width: 200px;
+}
+
+.telaInicial h1 {
+  font-size: 5rem;
+}
+
+.telaInicial .tituloEBotao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.telaInicial .botaoComecar {
+  font-size: 2rem;
+  letter-spacing: 1px;
+
+  background-color: rgb(60, 179, 113);
+
+  padding: 0 15px;
+  border-radius: 5px;
+
+  border: 3px solid black;
+  transition: 0.5s;
+}
+
+.telaInicial .botaoComecar:hover {
+  background-color: #20603c;
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+
+.telaInicial p.autoria {
+  font-size: 1.3rem;
+  font-family: "Tangerine";
+  font-weight: 700;
+}
